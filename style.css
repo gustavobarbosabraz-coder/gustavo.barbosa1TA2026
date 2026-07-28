@@ -1,0 +1,74 @@
+/* ==========================================
+   ESTILO ECO-NATURE — BLOG CSS
+   ========================================== */
+
+/* 1. Variáveis de Design (Cores e Tipografia) */
+:root {
+  --bg-primary: #f4f1ea;        /* Fundo areia/papel artesanal */
+  --bg-card: #ffffff;           /* Fundo limpo para leitura */
+  --text-main: #2b3a2e;         /* Verde floresta bem escuro */
+  --text-muted: #5e6d61;        /* Cinza musgo suave */
+  --accent-green: #3d6a45;      /* Verde folha fechado */
+  --accent-light: #e2ebd8;      /* Verde broto suave */
+  --accent-earth: #8c6d53;      /* Terracota / tom de madeira */
+  --border-color: #d8dec8;      /* Borda natural */
+  
+  --font-heading: 'Georgia', serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(45, 60, 48, 0.07);
+}
+
+/* 2. Reset Básico & Estilos Globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+/* 3. Cabeçalho (Header) */
+header {
+  background-color: var(--text-main);
+  color: var(--bg-primary);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid var(--accent-green);
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: var(--accent-light);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* 4. Layout Principal (Container Grid) */
+.container {
+  max-width: 1050px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 2.5rem;
+}
+
+/* 5. Cartões de Post */
+.post-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius
