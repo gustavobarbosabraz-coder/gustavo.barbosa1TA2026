@@ -1,74 +1,71 @@
-/* ==========================================
-   ESTILO ECO-NATURE — BLOG CSS
-   ========================================== */
-
-/* 1. Variáveis de Design (Cores e Tipografia) */
-:root {
-  --bg-primary: #f4f1ea;        /* Fundo areia/papel artesanal */
-  --bg-card: #ffffff;           /* Fundo limpo para leitura */
-  --text-main: #2b3a2e;         /* Verde floresta bem escuro */
-  --text-muted: #5e6d61;        /* Cinza musgo suave */
-  --accent-green: #3d6a45;      /* Verde folha fechado */
-  --accent-light: #e2ebd8;      /* Verde broto suave */
-  --accent-earth: #8c6d53;      /* Terracota / tom de madeira */
-  --border-color: #d8dec8;      /* Borda natural */
-  
-  --font-heading: 'Georgia', serif;
-  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  
-  --radius: 12px;
-  --shadow: 0 4px 20px rgba(45, 60, 48, 0.07);
-}
-
-/* 2. Reset Básico & Estilos Globais */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-main);
-  font-family: var(--font-body);
-  line-height: 1.7;
+    font-family: 'Arial Black', sans-serif;
+    background-color: #fff8f0;
+    color: #222;
+    line-height: 1.6;
 }
-
-/* 3. Cabeçalho (Header) */
 header {
-  background-color: var(--text-main);
-  color: var(--bg-primary);
-  padding: 3.5rem 1.5rem;
-  text-align: center;
-  border-bottom: 4px solid var(--accent-green);
+    background-color: #ff0066;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 8px solid #000;
 }
 
 header h1 {
-  font-family: var(--font-heading);
-  font-size: 2.6rem;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-header p {
-  color: var(--accent-light);
-  font-size: 1.1rem;
-  font-style: italic;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-/* 4. Layout Principal (Container Grid) */
-.container {
-  max-width: 1050px;
-  margin: 2.5rem auto;
-  padding: 0 1.5rem;
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 2.5rem;
+nav ul li {
+    margin: 0 15px;
 }
 
-/* 5. Cartões de Post */
-.post-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    border: 4px solid #000;
+    background-color: #ffcc00;
+    box-shadow: 8px 8px 0 #000;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ff0066;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
